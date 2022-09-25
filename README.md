@@ -11,10 +11,10 @@ If all tiles have been turned red, the individual tiles should change it's backg
 - Give each tile a data attribute of id 0-9
 - Initailize empty array 'queue'
 - Add a click event listener to the document that...
-  - Returns if the event target has a data attribute id
+  - Returns if the event target doesn't have a data attribute id (didn't click a tile)
   - Returns if the event target already exists in the 'queue'
-  - Push the event target into to 'queue'
-  - Check if the 'queue' is full (all tiles have been clicked)
+  - Pushes the event target into to the 'queue'
+  - Checks if the 'queue' is full (queue.length === 9) (all tiles have been clicked)
  - Once all tiles have been clicked 
-  - Set an interval that checks if items remain in the 'queue'
-  - Uses shift() to remove and style the last item in the array
+  - Sets an interval that checks if items remain in the 'queue'
+  - While items remain, Uses shift() to remove and style the last item in the array
